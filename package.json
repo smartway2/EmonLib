@@ -1,0 +1,22 @@
+{
+  "name": "emonlibjs",
+  "version": "1.0.0",
+  "description": "_      _ _                             | |    (_) |    ___ _ __ ___   ___  _ __ | |     _| |__   / _ \\ '_ ` _ \\ / _ \\| '_ \\| |    | | '_ \\  |  __/ | | | | | (_) | | | | |____| | |_) |   \\___|_| |_| |_|\\___/|_| |_|______|_|_.__/",
+  "main": "EmonLib.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smartway2/EmonLib.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smartway2/EmonLib/issues"
+  },
+  "homepage": "https://github.com/smartway2/EmonLib#readme"
+}
