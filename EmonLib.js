@@ -1,8 +1,8 @@
-let five = require("johnny-five");
-let board = new five.Board();
+const five = require("johnny-five");
+const board = new five.Board();
 
-let supplyVoltage = 5000;
-let adc_counts = 1024;
+const supplyVoltage = 5000;
+const adc_counts = 1024;
 let inPinV;
 let vcal;
 let phasecal;
@@ -28,37 +28,7 @@ let current = (_inPinI, _ical) => {
   offsetI = adc_counts >> 2;
 }
 
-let five = require("johnny-five");
-let board = new five.Board();
-
-let supplyVoltage = 5000;
-let adc_counts = 1024;
-let inPinV;
-let vcal;
-let phasecal;
-let offsetV;
-let inPinI;
-let ical;
-let offsetI;
-let vrms;
-let irms;
-let realPower;
-let apparentPower;
-let powerFactor;
-
-let voltage = (_inPinV, _vcal, _phasecal) => {
-  inPinV = _inPinV;
-  vcal = _vcal;
-  phasecal = _phasecal;
-  offsetV = adc_counts >> 2;
-}
-let current = (_inPinI, _ical) => {
-  inPinI = _inPinI;
-  ical = _ical;
-  offsetI = adc_counts >> 2;
-}
-
-board.on("ready", function() {
+board.on("ready", () => {
 
   voltage("A2", 126.48, 1.7);
   current("A1", 111.1);
@@ -170,7 +140,7 @@ this.repl.inject({
     pin.write(0);
   }
 })
-  setInterval(function(){
+  setInterval(() => {
     calcVI(20, 2000);
     console.log('vrms: ' + vrms + ' irms: ' + irms + ' realPower: ' + realPower + ' apparentPower: ' + apparentPower + ' power factor: ' + powerFactor);
   }, 2000)
