@@ -1,8 +1,8 @@
-###EmonLibJS
+# EmonLibJS
 
 This is a fork of the OpenEnergyMonitor EmonLib, which includes a converted NodeJS version, built via Johnny-Five. Electricity monitoring library.
 
-#Usage
+## Usage
 
 1. In order to run NodeJS scripts and Johnny-Five on an Arduino board, you need to upload the Standard Firmata Sketch onto your board from the Arduino IDE Example Sketches menu.
 
@@ -59,7 +59,7 @@ this.repl.inject({
 })
 ```
 
-#Original Readme
+### Original Readme
 Arduino Energy Monitoring Library - compatible with Arduino 1.0
 *****************************************************************
 
