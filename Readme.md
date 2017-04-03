@@ -9,7 +9,8 @@ This is a fork of the OpenEnergyMonitor EmonLib, which includes a converted Node
 2. Either clone or download this repository.
 
 3. Ensure that you have NodeJS installed on your command line/command prompt. Ensure that your Arduino is plugged in, and fully wired according to the EmonLib Guide. Navigate to the EmonLib directory you just downloaded and run the EmonLib.js file in node.
-```node EmonLib.js
+``` node EmonLib.js
+
 ```
 
 4. The script should start running and presto! You should be getting readings of RMS voltage, RMS current, Real Power, Apparent Power, and Power Factor.
@@ -46,6 +47,7 @@ The calcVI and interval settings, along with the REPL output can be customized b
 ```
 The supply voltage can be changed by altering the supply voltage variable on line 4. It is measured in millivolts.
 ```const supplyVoltage = 5000;
+
 ```
 Your preferences on the relay can be edited starting on line 134 with the pin:
 ```let pin = new five.Pin(8);
